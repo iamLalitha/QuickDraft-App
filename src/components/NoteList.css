@@ -1,0 +1,146 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('../gjkiwlad82pb1.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+body.dark-mode {
+  background-image: url('../pink-and-black-background-2560-x-1600-01nax4io5qmdohih.jpg');
+  background-color: #333;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-note {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.note-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+
+
+/* Note List Styles */
+.note-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+/* Header Styles */
+.note-list h2 {
+  color: black;
+  text-align: center;
+}
+
+.note-list.dark-mode h2{
+  color:#fff;
+}
+
+/* Note Styles */
+.note {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  width: calc(33.33% - 20px);
+  box-sizing: border-box;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .note {
+    width: calc(50% - 20px);
+  }
+}
+.note h3 {
+  color: #333;
+}
+
+.note p {
+  color: #666;
+}
+.container button:hover{
+  background-color: plum;
+}
+.note button {
+  background-color: pink;
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.note button:hover {
+  background-color: palevioletred;
+}
+
+.note.pinned {
+  border: 5px solid plum;
+}
+#ip2 {
+  border-radius: 10px;
+  border: 1px solid #609;
+  padding: 10px;
+  padding-bottom: 20px; 
+  width: px;
+  height: 10px;    
+}
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #ddd;
+  color: #333;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #bbb;
+}
+
+.pagination button.active {
+  background-color:  #F172A1;
+  color: white;
+  border: 1px solid #F172A1;
+}
+
+.dark-mode .note {
+  background-color: black ;
+  border-color: #444;
+  color: #f0EBF4;
+}
+
+.dark-mode .note button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.dark-mode .pagination button {
+  background-color: #4caf50;
+  color: #333333e6;
+}
