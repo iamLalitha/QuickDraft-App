@@ -1,4 +1,3 @@
-// src/components/NoteList.js
 import React, { useState, useEffect } from 'react';
 import Note from './Note';
 import { useSpring, animated } from 'react-spring';

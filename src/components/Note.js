@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useSpring, animated } from 'react-spring';
+import {  animated } from 'react-spring';
 
 function Note({ note, onPinToggle, onDelete, onSave }) {
   const { id, title, tagline, body, pinned } = note;
@@ -8,11 +8,11 @@ function Note({ note, onPinToggle, onDelete, onSave }) {
   const [editedTagline, setEditedTagline] = useState(tagline);
   const [editedBody, setEditedBody] = useState(body);
 
-  const noteAnimation = useSpring({
-    opacity: 1,
-    transform: 'translateY(0)',
-    from: { opacity: 0, transform: 'translateY(-20px)' },
-  });
+  // const noteAnimation = useSpring({
+  //   opacity: 1,
+  //   transform: 'translateY(0)',
+  //   from: { opacity: 0, transform: 'translateY(-20px)' },
+  // });
 
 
   const handleEdit = () => {
