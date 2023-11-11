@@ -1,4 +1,6 @@
-Live URL: 
+Live URL: https://lovely-torte-2d4208.netlify.app/
+
+
 This note keeping app is called QuickDraft. This contains features such as, the user can add title, tagline, notes and can also save,edit,pin and delete the notes. This also has light and dark mode.
 
 Light Mode UI:
